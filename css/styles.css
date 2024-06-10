@@ -2,12 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #f8f4f4;
+    background-image: url('/images/gym.png');
+    background-size: cover;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent background */
+    color: #fcfbfb;
     padding: 10px 0;
 }
 
@@ -40,11 +42,17 @@ header nav ul li a {
 }
 
 .hero {
-    background-image: no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
+        background: url('../images/gym.png') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        height: 50vh; /* Make the hero section take up full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 .hero .btn {
     background: #e67e22;
@@ -57,6 +65,7 @@ header nav ul li a {
 .features {
     padding: 50px 0;
     text-align: center;
+    background: rgba(12, 12, 12, 0.9); /* Light background for text contrast */
 }
 
 .features .container {
@@ -69,10 +78,14 @@ header nav ul li a {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    color: #faf9f9;
+    text-align: right;
     padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #242323;
 }
 
 footer p {
@@ -80,7 +93,8 @@ footer p {
 }
 
 .about, .services, .contact {
-    padding: 50px 0;
+    padding: 110px 0;
+    background-color: rgba(32, 31, 31, 0.9); /* Light background for text contrast */
 }
 
 .container {
